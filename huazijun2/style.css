@@ -1,0 +1,483 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    background-color: #0a0a0a;
+    color: #eee;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 头部样式 */
+header {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* CSS星星图标 */
+.star-logo {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 10px;
+    background-color: #ff4757;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #fff;
+    border-left: 0.3em solid transparent;
+    transform: scale(1.5);
+}
+
+.star:before, .star:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0.6em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #fff;
+    border-left: 0.3em solid transparent;
+}
+
+.star:before {
+    transform: rotate(72deg);
+    left: -0.5em;
+}
+
+.star:after {
+    transform: rotate(-72deg);
+    right: -0.5em;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4757;
+}
+
+/* 内容区布局 */
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* 左侧视频播放区 */
+.player-section {
+    flex: 1;
+    min-width: 0; /* 防止弹性项目溢出 */
+}
+
+.player-container {
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#video-player {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9比例 */
+    position: relative;
+}
+
+#video-player video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+/* 右侧侧边栏 */
+.sidebar {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.section-category {
+    color: #ff4757;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-left: 3px solid #ff4757;
+    padding-left: 10px;
+}
+
+.anime-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.anime-meta {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.details-link {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+/* 资源部分 */
+.resource-section {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.resource-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.resource-title {
+    font-size: 16px;
+    color: #eee;
+}
+
+.resource-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.control-btn:hover {
+    color: #ff4757;
+}
+
+.resource-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.line-name {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.line-quality {
+    background-color: #ff4757;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 选集网格 */
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.episode-btn {
+    background-color: #252525;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.episode-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.episode-btn.active {
+    background-color: #ff4757;
+    color: white;
+    font-weight: bold;
+}
+
+/* 模态窗口样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #ff4757;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    color: #ff4757;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-meta {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.modal-meta span {
+    margin-right: 15px;
+}
+
+.modal-body {
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #252525;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.modal-info {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.modal-cover {
+    flex: 0 0 200px;
+}
+
+.modal-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-details {
+    flex: 1;
+}
+
+.modal-details p {
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.modal-synopsis {
+    margin-bottom: 25px;
+}
+
+.modal-synopsis h3, .modal-characters h3 {
+    color: #ff4757;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-left: 3px solid #ff4757;
+    padding-left: 10px;
+}
+
+.modal-synopsis p {
+    margin-bottom: 15px;
+    color: #ccc;
+    text-align: justify;
+}
+
+.modal-characters ul {
+    list-style-position: inside;
+    color: #ccc;
+}
+
+.modal-characters li {
+    margin-bottom: 10px;
+}
+
+.modal-characters strong {
+    color: #ddd;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 12px;
+    border-top: 1px solid #222;
+    margin-top: auto;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #aaa;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff4757;
+}
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+    
+    .episodes-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .modal-info {
+        flex-direction: column;
+    }
+    
+    .modal-cover {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .episodes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    nav ul li {
+        margin-left: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+} 
