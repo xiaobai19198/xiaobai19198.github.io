@@ -12,6 +12,9 @@ const baseUrl = './resource/';
 window.baseUrl = baseUrl;
 window.totalEpisodes = totalEpisodes;
 
+// 获取当前动漫标题
+const animeTitle = document.querySelector('.anime-title').textContent;
+
 // 生成选集按钮
 for (let i = 1; i <= totalEpisodes; i++) {
     const button = document.createElement('div');
@@ -110,8 +113,8 @@ function loadVideo(episode) {
         console.error('您的浏览器不支持HLS视频播放');
     }
     
-    // 更新页面标题
-    document.title = `第${episode}集 - 地缚少年花子君 第二季 - 五星动漫网`;
+    // 更新页面标题 - 使用动态获取的动漫标题
+    document.title = `第${episode}集 - ${animeTitle} - 五星动漫网`;
 }
 
 // 初始加载第一集
@@ -167,4 +170,4 @@ window.addEventListener("keydown", function(event) {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
     }
-}); 
+});
