@@ -4,16 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>末日三问 - 五星动漫网</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../../assets/favicon/favicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="../../assets/favicon/favicon-128x128.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="../../assets/favicon/favicon-192x192.png">
-    <link rel="manifest" href="../../site.webmanifest">
-    <meta name="theme-color" content="#ff4757">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="star-logo">
+                    <div class="star"></div>
+                </div>
+                <h1>五星动漫网</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html"><i class="fa fa-home"></i> 首页</a></li>
+                    <li><a href="#"><i class="fa fa-list"></i> 分类</a></li>
+                    <li><a href="#"><i class="fa fa-star"></i> 排行</a></li>
+                    <li><a href="#"><i class="fa fa-calendar"></i> 时间表</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> 我的</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content-wrapper">
+            <!-- 左侧视频播放区 -->
+            <div class="player-section">
+                <div class="player-container">
+                    <div id="video-player">
+                        <video id="video" controls autoplay></video>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右侧信息与选集区 -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2 class="section-category">视频</h2>
+                    <h1 class="anime-title">末日三问</h1>
+                    <div class="anime-meta">
+                        <span class="view-count">78542</span> • 
+                        <span class="year">2017</span> • 
+                        <span class="country">日本</span> • 
+                        <span class="tag">战斗</span> • 
+                        <span class="tag">科幻</span> • 
+                        <span class="tag">后末日</span> • 
+                        <a href="#" class="details-link" id="detailsButton">详情 ></a>
+                    </div>
+                </div>
+                
+                <div class="resource-section">
+                    <div class="resource-header">
+                        <h3 class="resource-title">资源列表</h3>
+                        <div class="resource-controls">
+                            <button class="control-btn"><i class="fa fa-sort"></i> 排序</button>
+                            <button class="control-btn"><i class="fa fa-download"></i> 下载</button>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-line">
+                        <span class="line-name"><i class="fa fa-play-circle"></i> netease-01</span>
+                        <span class="line-quality">HD</span>
+                    </div>
+                    
+                    <div class="episodes-grid" id="episodes-container">
+                        <!-- JS动态生成选集按钮 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-weibo"></i></a>
+                <a href="#"><i class="fa fa-qq"></i></a>
+                <a href="#"><i class="fa fa-wechat"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <p>© 2024 五星动漫网 - 致力于为动漫爱好者提供最好的观看体验</p>
+            <p>本站所有内容均来自互联网，仅供学习交流使用，版权归原作者所有</p>
+        </footer>
+    </div>
+
+    <!-- 详情模态窗口 -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h2>末日三问</h2>
+                <div class="modal-meta">
+                    <span class="modal-rating">评分: 8.7</span>
+                    <span class="modal-year">首播: 2017年4月</span>
+                    <span class="modal-status">状态: 已完结</span>
+                </div>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-cover">
+                        <img src="https://pic1.zhimg.com/80/v2-0440c513a9af4f85f9101a902ab4d38a_720w.webp" alt="末日三问">
+                    </div>
+                    <div class="modal-details">
+                        <p><strong>原名:</strong> 終末なにしてますか？忙しいですか？救ってもらっていいですか？</p>
+                        <p><strong>英文名:</strong> WorldEnd: What do you do at the end of the world? Are you busy? Will you save us?</p>
+                        <p><strong>制作公司:</strong> Satelight、C2C</p>
+                        <p><strong>原作:</strong> 枯野瑛</p>
+                        <p><strong>首播时间:</strong> 2017年4月</p>
+                        <p><strong>集数:</strong> 全12集</p>
+                        <p><strong>类型:</strong> 战斗、科幻、后末日、奇幻、恋爱</p>
+                        <p><strong>声优:</strong> 新井良平、种崎敦美、东山奈央、本渡枫、内田真礼</p>
+                    </div>
+                </div>
+                
+                <div class="modal-synopsis">
+                    <h3>剧情简介</h3>
+                    <p>《末日三问》（也称"末日时在做什么？有没有空？可以来拯救吗？"）的故事背景设定在人类灭绝后的世界，地球上仅存的是被称为"兽化人"的新人类种族，他们居住在浮空岛上，与被称为"17兽"的神秘生物作战。</p>
+                    <p>故事围绕着男主角威廉·珂尔米亚展开，他是最后一个存活的人类，在与"兽化人"女孩珂朵莉·诺塔·塞尼奥里斯的相遇后，他成为了照顾一群被称为"妖精仓库"的少女们的监护人，这些少女们是为了对抗"17兽"而被武器化的人形生物。</p>
+                    <p>随着故事的进展，威廉与这些"妖精仓库"的少女们，特别是与其中的琉庭丽姆丝·提尼埃拉建立了深厚的感情纽带。这部作品讲述了他们在末日世界中为守护彼此而战斗的感人故事，以及他们在面对毁灭性威胁时所展现的勇气与爱。</p>
+                </div>
+                
+                <div class="modal-characters">
+                    <h3>主要角色</h3>
+                    <ul>
+                        <li><strong>威廉·珂尔米亚（ヴィレム・クメシュ）</strong> - 男主角，最后一位存活的人类，成为了"妖精仓库"的管理员。</li>
+                        <li><strong>珂朵莉·诺塔·塞尼奥里斯（クトリ・ノタ・セニオリス）</strong> - 女主角，"兽化人"女孩，管理浮空岛商店街，帮助威廉找到工作。</li>
+                        <li><strong>琉庭丽姆丝·提尼埃拉（レンプティ・ラーメル・ティリーリ）</strong> - 妖精仓库中最有天赋的少女，红发赤瞳，被称为"红色之死"的决战兵器，与威廉发展出深厚感情。</li>
+                        <li><strong>伊特莉·尤克特尔（イクトリ・ユクトリーレ）</strong> - 年龄最小的妖精，被称为"破坏收束铳身"，在战斗中提供支援，对威廉非常亲近。</li>
+                        <li><strong>奈芙莲·卢克·因修（ネフレン・ルク・インシュー）</strong> - 妖精仓库的少女之一，有着银色长发和蓝眼睛，被称为"银貌之死"，性格沉稳冷静。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="../../assets/js/player.js"></script>
+    <script src="../../assets/js/download.js"></script>
+    
+    <!-- 添加一起看功能 -->
+    <script src="https://fastly.jsdelivr.net/gh/VideoTogether/VideoTogether@latest/release/extension.website.user.js"></script>
+</body>
+</html>
