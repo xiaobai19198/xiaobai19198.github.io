@@ -4,142 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鹿乃子乃子虎视眈眈 - 五星动漫网</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../../assets/favicon/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../../assets/favicon/favicon-128x128.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../../assets/favicon/favicon-192x192.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <meta name="theme-color" content="#ff4757">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <div class="star-logo">
-                    <div class="star"></div>
-                </div>
-                <h1>五星动漫网</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html"><i class="fa fa-home"></i> 首页</a></li>
-                    <li><a href="#"><i class="fa fa-list"></i> 分类</a></li>
-                    <li><a href="#"><i class="fa fa-star"></i> 排行</a></li>
-                    <li><a href="#"><i class="fa fa-calendar"></i> 时间表</a></li>
-                    <li><a href="#"><i class="fa fa-user"></i> 我的</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="content-wrapper">
-            <!-- 左侧视频播放区 -->
-            <div class="player-section">
-                <div class="player-container">
-                    <div id="video-player">
-                        <video id="video" controls autoplay></video>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 右侧信息与选集区 -->
-            <div class="sidebar">
-                <div class="sidebar-header">
-                    <h2 class="section-category">视频</h2>
-                    <h1 class="anime-title">鹿乃子乃子虎视眈眈</h1>
-                    <div class="anime-meta">
-                        <span class="view-count">63421</span> • 
-                        <span class="year">2023</span> • 
-                        <span class="country">日本</span> • 
-                        <span class="tag">恋爱</span> • 
-                        <span class="tag">校园</span> • 
-                        <span class="tag">喜剧</span> • 
-                        <a href="#" class="details-link" id="detailsButton">详情 ></a>
-                    </div>
-                </div>
-                
-                <div class="resource-section">
-                    <div class="resource-header">
-                        <h3 class="resource-title">资源列表</h3>
-                        <div class="resource-controls">
-                            <button class="control-btn"><i class="fa fa-sort"></i> 排序</button>
-                            <button class="control-btn"><i class="fa fa-download"></i> 下载</button>
-                        </div>
-                    </div>
-                    
-                    <div class="resource-line">
-                        <span class="line-name"><i class="fa fa-play-circle"></i> netease-01</span>
-                        <span class="line-quality">HD</span>
-                    </div>
-                    
-                    <div class="episodes-grid" id="episodes-container">
-                        <!-- JS动态生成选集按钮 -->
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="social-links">
-                <a href="#"><i class="fa fa-weibo"></i></a>
-                <a href="#"><i class="fa fa-qq"></i></a>
-                <a href="#"><i class="fa fa-wechat"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-            <p>© 2024 五星动漫网 - 致力于为动漫爱好者提供最好的观看体验</p>
-            <p>本站所有内容均来自互联网，仅供学习交流使用，版权归原作者所有</p>
-        </footer>
-    </div>
-
-    <!-- 详情模态窗口 -->
-    <div id="detailsModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="modal-header">
-                <h2>鹿乃子乃子虎视眈眈</h2>
-                <div class="modal-meta">
-                    <span class="modal-rating">评分: 8.3</span>
-                    <span class="modal-year">首播: 2023年7月</span>
-                    <span class="modal-status">状态: 已完结</span>
-                </div>
-            </div>
-            
-            <div class="modal-body">
-                <div class="modal-info">
-                    <div class="modal-cover">
-                        <img src="https://pic1.zhimg.com/80/v2-0440c513a9af4f85f9101a902ab4d38a_720w.webp" alt="鹿乃子乃子虎视眈眈">
-                    </div>
-                    <div class="modal-details">
-                        <p><strong>原名:</strong> しかのこのこのここしたんたん</p>
-                        <p><strong>制作公司:</strong> Studio Gokumi、AXsiZ</p>
-                        <p><strong>原作:</strong> おしおしお</p>
-                        <p><strong>首播时间:</strong> 2023年7月</p>
-                        <p><strong>集数:</strong> 全12集</p>
-                        <p><strong>类型:</strong> 校园、喜剧、恋爱、奇幻</p>
-                        <p><strong>声优:</strong> 潘惠美、藤田咲、田边留依、和泉风花</p>
-                    </div>
-                </div>
-                
-                <div class="modal-synopsis">
-                    <h3>剧情简介</h3>
-                    <p>《鹿乃子乃子虎视眈眈》讲述了原本是不良少女，现在为自己打造出优等生形象的高二女生虎视虎子，某日在上学路上莫名其妙遇到了挂在电线上的鹿角少女鹿乃子乃子，就此迎来了校园生活的大混乱。</p>
-                    <p>虎视虎子是一位就读于日野南高中的女子高中生，隐藏着自己曾经是不良少女的秘密，努力维持着优等生的形象。某天她上学时，感觉有个冰冷的东西打到自己的脸。结果抬头一看，竟发现有一位留着鼻涕、鹿角卡在电线杆上而无法动弹的少女。</p>
-                    <p>这位神秘的鹿角少女名叫鹿乃子乃子，她转学到虎视虎子的学校，并与虎子一起成立了"小鹿部"。鹿乃子乃子的鹿角能发光、爆破、储物等，她最喜欢吃小鹿仙贝，甚至会在动物园以鹿的身份打工。随着故事的发展，更多有趣的角色加入，如虎视虎子的妹妹虎视馅子、饥饿系少女马车芽芽芽等，一同展开了一段充满欢笑的校园生活。</p>
-                </div>
-                
-                <div class="modal-characters">
-                    <h3>主要角色</h3>
-                    <ul>
-                        <li><strong>鹿乃子乃子（しかのこ のこ）</strong> - 头上长角的谜之少女，转学来到都立日野南高中，小鹿部的小鹿担当。鹿角可拆卸且具有发光、爆破、储物等功能，最喜欢吃小鹿仙贝。</li>
-                        <li><strong>虎视虎子（こし とらこ）</strong> - 曾经是不良少女，不过现在一直以优等生为目标，努力营造人设。日常被鹿乃子乃子不着边际的言行牵着鼻子走。</li>
-                        <li><strong>虎视馅子（こし あんこ）</strong> - 虎视虎子的妹妹，郁娇系姐控，视妨碍自己和姐姐虎子相处的一切为敌。起初想除掉鹿乃子乃子，不过后来与她成了朋友。</li>
-                        <li><strong>马车芽芽芽（ばしゃめ めめ）</strong> - 饥饿系少女，平时会一直干饭。因感激鹿乃子乃子在危急时刻赠予自己食物，故十分崇拜她。</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="../../assets/js/player.js"></script>
-    <script src="../../assets/js/download.js"></script>
-    
-    <!-- 添加一起看功能 -->
-    <script src="https://fastly.jsdelivr.net/gh/VideoTogether/VideoTogether@latest/release/extension.website.user.js"></script>
-</body>
-</html>
