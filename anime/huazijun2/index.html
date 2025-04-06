@@ -4,16 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>地缚少年花子君 第二季 - 五星动漫网</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../../assets/favicon/favicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="../../assets/favicon/favicon-128x128.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="../../assets/favicon/favicon-192x192.png">
-    <link rel="manifest" href="../../site.webmanifest">
-    <meta name="theme-color" content="#ff4757">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="star-logo">
+                    <div class="star"></div>
+                </div>
+                <h1>五星动漫网</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html"><i class="fa fa-home"></i> 首页</a></li>
+                    <li><a href="#"><i class="fa fa-list"></i> 分类</a></li>
+                    <li><a href="#"><i class="fa fa-star"></i> 排行</a></li>
+                    <li><a href="#"><i class="fa fa-calendar"></i> 时间表</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> 我的</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content-wrapper">
+            <!-- 左侧视频播放区 -->
+            <div class="player-section">
+                <div class="player-container">
+                    <div id="video-player">
+                        <video id="video" controls autoplay></video>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右侧信息与选集区 -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2 class="section-category">视频</h2>
+                    <h1 class="anime-title">地缚少年花子君 第二季</h1>
+                    <div class="anime-meta">
+                        <span class="view-count">52863</span> • 
+                        <span class="year">2025</span> • 
+                        <span class="country">日本</span> • 
+                        <span class="tag">恋爱</span> • 
+                        <span class="tag">奇幻</span> • 
+                        <a href="#" class="details-link" id="detailsButton">详情 ></a>
+                    </div>
+                </div>
+                
+                <div class="resource-section">
+                    <div class="resource-header">
+                        <h3 class="resource-title">资源列表</h3>
+                        <div class="resource-controls">
+                            <button class="control-btn"><i class="fa fa-sort"></i> 排序</button>
+                            <button class="control-btn"><i class="fa fa-download"></i> 下载</button>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-line">
+                        <span class="line-name"><i class="fa fa-play-circle"></i> netease-01</span>
+                        <span class="line-quality">HD</span>
+                    </div>
+                    
+                    <div class="episodes-grid" id="episodes-container">
+                        <!-- JS动态生成选集按钮 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-weibo"></i></a>
+                <a href="#"><i class="fa fa-qq"></i></a>
+                <a href="#"><i class="fa fa-wechat"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <p>© 2024 五星动漫网 - 致力于为动漫爱好者提供最好的观看体验</p>
+            <p>本站所有内容均来自互联网，仅供学习交流使用，版权归原作者所有</p>
+        </footer>
+    </div>
+
+    <!-- 详情模态窗口 -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h2>地缚少年花子君 第二季</h2>
+                <div class="modal-meta">
+                    <span class="modal-rating">评分: 9.2</span>
+                    <span class="modal-year">首播: 2022年4月</span>
+                    <span class="modal-status">状态: 已完结</span>
+                </div>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-cover">
+                        <img src="https://pic.imgdb.cn/item/65de7e269f345e8d03f1b68c.jpg" alt="地缚少年花子君 第二季">
+                    </div>
+                    <div class="modal-details">
+                        <p><strong>原名:</strong> 地縛少年花子くん 2期</p>
+                        <p><strong>制作公司:</strong> Lerche</p>
+                        <p><strong>原作:</strong> あいだいろ</p>
+                        <p><strong>首播时间:</strong> 2022年4月</p>
+                        <p><strong>集数:</strong> 全12集</p>
+                        <p><strong>类型:</strong> 学园、奇幻、恋爱、超自然</p>
+                        <p><strong>声优:</strong> 绪方惠美、鬼头明里、千叶翔也、内田雄马</p>
+                    </div>
+                </div>
+                
+                <div class="modal-synopsis">
+                    <h3>剧情简介</h3>
+                    <p>《地缚少年花子君》第二季延续了第一季的故事，讲述了神秘的学校七大不可思议之一"花子君"与普通女高中生八尋寧々之间发生的故事。</p>
+                    <p>第二季中，寧々继续与花子君一起解决学校内的超自然事件，同时更深入地探索花子君的过去和他如何成为学校的七大不可思议之一的故事。寧々将面临新的挑战，与花子君的感情也会有新的发展。</p>
+                    <p>随着剧情推进，更多花子君过去的秘密将被揭开，以及他与其他超自然存在的关系也将被展现。来自"境界"的威胁使得寧々和花子君的命运更加紧密相连。</p>
+                </div>
+                
+                <div class="modal-characters">
+                    <h3>主要角色</h3>
+                    <ul>
+                        <li><strong>花子君（花子くん）</strong> - 学校七大不可思议之一，是一个穿着学兰、右眼上有鱼钩印记的少年幽灵。</li>
+                        <li><strong>八尋寧々（やしろ ねね）</strong> - 女主角，偶然遇到花子君后成为他的助手，能看见灵体。</li>
+                        <li><strong>源光（みなもと てる）</strong> - 寧々的同班同学，对超自然现象很感兴趣。</li>
+                        <li><strong>赤根葵（あかね あおい）</strong> - 学校的风纪委员，与花子君有过节。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="../../assets/js/player.js"></script>
+    <script src="../../assets/js/download.js"></script>
+    
+    <!-- 添加一起看功能 -->
+    <script src="https://fastly.jsdelivr.net/gh/VideoTogether/VideoTogether@latest/release/extension.website.user.js"></script>
+</body>
+</html>
